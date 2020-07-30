@@ -1,0 +1,30 @@
+.elements__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+    margin: 0;
+
+    grid-row: 1;
+
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+
+@media (max-width: 780px) {
+    .elements__title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 546px) {
+    .elements__title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

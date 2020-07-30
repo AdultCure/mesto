@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("Inter/Inter-Thin.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-Thin.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("Inter/Inter-ExtraLight.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-ExtraLight.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("Inter/Inter-Light.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-Light.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("Inter/Inter-Regular.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-Regular.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("Inter/Inter-Medium.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-Medium.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("Inter/Inter-SemiBold.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-SemiBold.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("Inter/Inter-Bold.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-Bold.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("Inter/Inter-ExtraBold.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-ExtraBold.woff?v=3.13") format("woff");
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("Inter/Inter-Black.woff2?v=3.13") format("woff2"),
+    url("Inter/Inter-Black.woff?v=3.13") format("woff");
+}

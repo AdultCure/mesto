@@ -1,0 +1,27 @@
+.profile__name {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 56px;
+    margin: 0;
+    align-self: end;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+@media(max-width: 658px){
+    .profile__name {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 546px) {
+    .profile__name {
+        justify-self: center;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 56px;
+    }
+}

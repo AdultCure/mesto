@@ -1,0 +1,24 @@
+.profile__add-button {
+    margin: 14px 64px;
+    max-width: 22px;
+}
+
+@media(max-width: 658px){
+    .profile__add-button{
+        max-width: 18px;
+        margin: 14px 41px;
+    }
+}
+
+@media(max-width: 546px){
+    .profile__add-button{
+        margin: 17px 134px;
+    }
+}
+
+@media (max-width: 320px) {
+    .profile__add-button{
+        margin: 17px 130px;
+    }
+}
+

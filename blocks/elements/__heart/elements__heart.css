@@ -1,0 +1,5 @@
+.elements__heart {
+    grid-row: 1;
+    align-self: center;
+    max-width: 21px;
+}

@@ -1,0 +1,32 @@
+.profile__add-box {
+    box-sizing: border-box;
+    border: 2px solid;
+    color: white;
+    align-self: center;
+    justify-self: end;
+    min-width: 150px;
+    min-height: 50px;
+    border-radius: 2px;
+}
+
+@media(max-width: 658px){
+    .profile__add-box{
+        min-width: 100px;
+        min-height: 35px;
+    }
+}
+
+@media (max-width: 546px) {
+    .profile__add-box {
+        justify-self: center;
+        min-width: 250px;
+        min-height: 50px;
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 320px) {
+    .profile__add-box {
+        max-width: 282px;
+    }
+}

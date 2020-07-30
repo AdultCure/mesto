@@ -1,0 +1,15 @@
+.elements__content {
+    display: grid;
+
+    grid-template-rows: minmax(min-content, 23px);
+    justify-content: space-between;
+    margin: 25px 15px 31px 21px;
+}
+
+@media (max-width: 882px) {
+    .elements__content {
+        
+        grid-template-rows: minmax(min-content, 23px);
+        margin: 20px 15px 20px 21px;
+    }
+}

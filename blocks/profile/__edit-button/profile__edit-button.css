@@ -1,0 +1,18 @@
+.profile__edit-button {
+    box-sizing: border-box;
+    border: 1px solid white;
+    max-width: 24px;
+    max-height: 24px;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 13px 17px;
+    align-self: end;
+}
+
+
+@media (max-width: 546px) {
+    .profile__edit-button {
+        margin: 0 0 0 10px;
+        align-self: center;
+    }
+}
