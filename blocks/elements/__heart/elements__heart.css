@@ -2,4 +2,10 @@
     grid-row: 1;
     align-self: center;
     max-width: 21px;
+    transition: 0.8s linear;
+    cursor: pointer;
+}
+
+.elements__heart:hover {
+    opacity: 0.6;
 }
