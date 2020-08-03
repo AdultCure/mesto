@@ -1,16 +1,24 @@
 .profile__add-box {
     box-sizing: border-box;
-    border: 2px solid;
-    color: white;
+    border: 2px solid white;
+    min-width: 150px;
+    max-height: 50px;
+    border-radius: 2px;
+    transition: 0.8s linear;
+    padding: 0;
     align-self: center;
     justify-self: end;
-    min-width: 150px;
-    min-height: 50px;
-    border-radius: 2px;
+    background-color: black;
+    cursor: pointer;
+    outline: none;
 }
 
-@media(max-width: 658px){
-    .profile__add-box{
+.profile__add-box:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 586px) {
+    .profile__add-box {
         min-width: 100px;
         min-height: 35px;
     }

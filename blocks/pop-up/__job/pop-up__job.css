@@ -1,0 +1,23 @@
+.pop-up__job {
+    width: 350px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 13px;
+    border: none;
+    outline: none;
+
+    color: #000000;
+}
+
+@media (max-width: 522px) {
+    .pop-up__job {
+        width: 270px;
+    }
+}
+
+@media (max-width: 338px) {
+    .pop-up__job {
+        width: 230px;
+    }
+}

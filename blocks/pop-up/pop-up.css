@@ -1,0 +1,23 @@
+@import url("__close-button/pop-up__close-button.css");
+@import url("__close-icon/pop-up__close-icon.css");
+@import url("__field/pop-up__field.css");
+@import url("__form/pop-up__form.css");
+@import url("__safe-button/pop-up__safe-button.css");
+@import url("__name/pop-up__name.css");
+@import url("__job/pop-up__job.css");
+@import url("__title/pop-up__title.css");
+@import url("__box/pop-up__box.css");
+@import url("__container/pop-up__container.css");
+
+
+
+.pop-up {
+    display: none;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: 11;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}

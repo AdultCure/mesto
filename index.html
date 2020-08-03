@@ -18,13 +18,9 @@
 				<div class="profile__info">
 					<h1 class="profile__name">Жак-Ив Кусто</h1>
 					<p class="profile__about">Исследователь океана</p>
-					<div class="profile__edit-button">
-						<img src="./images/Vector.png" alt="Ручка" class="profile__pen">
-					</div>
+					<button class="profile__edit-button"><img src="./images/Vector.png" alt="Ручка" class="profile__edit-pen"></button>
 				</div>
-				<div class="profile__add-box">
-					<img src="./images/Vector__plus.png" alt="Плюс" class="profile__add-button">
-				</div>
+					<button class="profile__add-box"><img src="./images/Vector__plus.png" alt="Плюс" class="profile__add-button"></button>
 			</section>
 
 			<section class="elements">
@@ -72,7 +68,7 @@
 				<div class="elements__card">
 					<img src="./images/Karachai.jpg" alt="Карачаевск" class="elements__picture">
 					<div class="elements__content">
-						<h2 class="elements__title">Карачаево-Черкессия</h2>
+						<h2 class="elements__title">Карачаево-Черкессияр</h2>
 						<img src="./images/Heart.svg" alt="Сердце" class="elements__heart">
 					</div>
 				</div>
@@ -84,5 +80,29 @@
 			<p class="footer__copyright">© 2020 Mesto Russia</p>
 		</footer>
 	</div>
+<div class="pop-up">
+	<div class="pop-up__container">
+		<button class="pop-up__close-button">
+			<img src="./images/Close%20Icon.svg" alt="Крестик" class="pop-up__close-icon">
+		</button>
+		<form class="pop-up__form" onfocus>
+			<div class="pop-up__box">
+				<h2 class="pop-up__title">Редактировать профиль</h2>
+				<div class="pop-up__field">
+					<label>
+						<input class="pop-up__name" placeholder="Имя">
+					</label>
+				</div>
+				<div class="pop-up__field">
+					<label>
+						<input class="pop-up__job" placeholder="Профессия">
+					</label>
+				</div>
+				<button class="pop-up__safe-button">Сохранить</button>
+			</div>
+		</form>
+	</div>
+</div>
+	<script src="script.js"></script>
 </body>
 </html>

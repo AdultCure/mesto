@@ -4,7 +4,7 @@
     display: grid;
     max-height: 120px;
     grid-template-rows: repeat(2, min-content);
-    grid-template-columns: minmax(min-content, 295px) min-content;
+    grid-template-columns: minmax(min-content, auto) min-content;
 }
 
 @media(max-width: 658px){

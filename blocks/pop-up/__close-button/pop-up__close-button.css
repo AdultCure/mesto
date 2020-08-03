@@ -1,0 +1,17 @@
+.pop-up__close-button {
+    max-width: fit-content;
+    justify-self: end;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    outline: none;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+@media (max-width: 552px) {
+    .pop-up__close-button {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}

@@ -1,0 +1,6 @@
+.pop-up__form {
+    border-radius: 10px;
+    background: white;
+    grid-column: 1;
+    grid-row: 2;
+}
