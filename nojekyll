@@ -1,0 +1,9 @@
+pwd
+Lavezur/mesto
+
+git branch
+* master
+develop
+
+touch .nojekyll
+git add . && git commit -m "added nojekyll"
