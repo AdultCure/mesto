@@ -29,7 +29,7 @@
 					<img src="./images/Karachai.jpg" alt="Карачаевск" class="elements__picture">
 					<div class="elements__content">
 						<h2 class="elements__title">Карачаевск</h2>
-						<img src="./images/Heart.svg" alt="Сердце" class="elements__heart">
+						<button class="elements__heart"></button>
 					</div>
 				</div>
 
@@ -37,7 +37,7 @@
 					<img src="./images/Elbrus.png" alt="Эльбрус" class="elements__picture">
 					<div class="elements__content">
 						<h2 class="elements__title">Гора Эльбрус</h2>
-						<img src="./images/Heart.svg" alt="Сердце" class="elements__heart">
+						<button class="elements__heart"></button>
 					</div>
 				</div>
 
@@ -45,7 +45,7 @@
 					<img src="./images/Dombai.png" alt="Домбай" class="elements__picture">
 					<div class="elements__content">
 						<h2 class="elements__title">Домбай</h2>
-						<img src="./images/Heart.svg" alt="Сердце" class="elements__heart">
+						<button class="elements__heart"></button>
 					</div>
 				</div>
 
@@ -53,7 +53,7 @@
 					<img src="./images/Elbrus.png" alt="Эльбрус" class="elements__picture">
 					<div class="elements__content">
 						<h2 class="elements__title">Гора Эльбрус</h2>
-						<img src="./images/Heart.svg" alt="Сердце" class="elements__heart">
+						<button class="elements__heart"></button>
 					</div>
 				</div>
 
@@ -61,7 +61,7 @@
 					<img src="./images/Dombai.png" alt="Домбай" class="elements__picture">
 					<div class="elements__content">
 						<h2 class="elements__title">Домбай</h2>
-						<img src="./images/Heart.svg" alt="Сердце" class="elements__heart">
+						<button class="elements__heart"></button>
 					</div>
 				</div>
 
@@ -69,7 +69,7 @@
 					<img src="./images/Karachai.jpg" alt="Карачаевск" class="elements__picture">
 					<div class="elements__content">
 						<h2 class="elements__title">Карачаево-Черкессияр</h2>
-						<img src="./images/Heart.svg" alt="Сердце" class="elements__heart">
+						<button class="elements__heart"></button>
 					</div>
 				</div>
 
@@ -83,26 +83,22 @@
 <div class="pop-up">
 	<div class="pop-up__container">
 		<button class="pop-up__close-button">
-			<img src="./images/Close%20Icon.svg" alt="Крестик" class="pop-up__close-icon">
+
 		</button>
-		<form class="pop-up__form" onfocus>
-			<div class="pop-up__box">
-				<h2 class="pop-up__title">Редактировать профиль</h2>
+		<form class="pop-up__form" method="post" name="profileForm">
+
+			<h3 class="pop-up__title">Редактировать профиль</h3>
 				<div class="pop-up__field">
-					<label>
-						<input class="pop-up__name" placeholder="Имя">
-					</label>
+					<input class="pop-up__name" placeholder="Имя" name="profileName">
 				</div>
 				<div class="pop-up__field">
-					<label>
-						<input class="pop-up__job" placeholder="Профессия">
-					</label>
+					<input class="pop-up__job" placeholder="Профессия" name="profileJob">
 				</div>
-				<button class="pop-up__safe-button">Сохранить</button>
-			</div>
+			<button class="pop-up__save-button">Сохранить</button>
+
 		</form>
 	</div>
 </div>
-	<script src="script/script.js"></script>
+	<script src="./script/script.js"></script>
 </body>
 </html>

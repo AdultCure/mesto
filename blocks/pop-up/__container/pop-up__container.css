@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 430px auto;
     grid-template-rows: min-content minmax(auto, 330px);
-    padding-left: 35px;
+    padding-left: 45px;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
@@ -11,7 +11,8 @@
 @media (max-width: 522px) {
     .pop-up__container {
         grid-template-columns: 280px auto;
-        grid-template-rows: min-content minmax(auto, 300px);
+        grid-template-rows: min-content minmax(auto, 280px);
+        padding-left: 40px;
     }
 }
 

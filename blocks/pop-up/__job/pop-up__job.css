@@ -3,9 +3,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    padding-bottom: 13px;
     border: none;
     outline: none;
+    padding: 0;
 
     color: #000000;
 }

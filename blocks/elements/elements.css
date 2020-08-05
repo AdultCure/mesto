@@ -15,7 +15,6 @@
 
 @media (max-width: 882px) {
     .elements {
-        grid-template-rows: repeat(2, minmax(min-content, auto));
         grid-template-columns: 1fr 1fr 1fr;
 
     }

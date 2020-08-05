@@ -6,7 +6,7 @@ let formElement = document.querySelector('.pop-up__form');
 let profile = document.querySelector('.profile');
 
 
-let popupToggle = function() {
+function popupToggle() {
     popup.classList.toggle('pop-up_open');
 
     let nameProfile = profile.querySelector('.profile__name');

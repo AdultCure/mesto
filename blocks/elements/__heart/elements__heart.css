@@ -1,9 +1,15 @@
 .elements__heart {
     grid-row: 1;
     align-self: center;
-    max-width: 21px;
+    min-width: 21px;
+    min-height: 19px;
     transition: 0.8s linear;
     cursor: pointer;
+    background: url("../../../images/Heart.svg") top left no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    outline: none;
 }
 
 .elements__heart:hover {

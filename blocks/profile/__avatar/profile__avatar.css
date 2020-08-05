@@ -1,7 +1,3 @@
-.profile__avatar {
-
-}
-
 @media (max-width: 546px) {
     .profile__avatar {
         justify-self: center;
