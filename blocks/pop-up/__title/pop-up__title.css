@@ -9,9 +9,18 @@
 
 @media (max-width: 522px) {
     .pop-up__title {
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 20px;
-        margin: 20px 0 20px 5px;
+        font-size: 22px;
+        line-height: 30px;
+        margin: 25px auto 40px;
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 398px) {
+    .pop-up__title {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 25px auto;
+        max-width: 230px;
     }
 }

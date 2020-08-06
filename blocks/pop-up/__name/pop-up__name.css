@@ -1,23 +1,30 @@
 .pop-up__name {
-    width: 350px;
+    min-width: 350px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    border: none;
     outline: none;
-    padding: 0;
+    display: block;
+    margin: 0 36px 30px;
+    padding-bottom: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
     color: #000000;
 }
 
 @media (max-width: 522px) {
     .pop-up__name {
-        width: 270px;
+        min-width: 260px;
+        margin: 0 auto 25px;
     }
 }
 
-@media (max-width: 338px) {
+@media (max-width: 398px) {
     .pop-up__name {
-        width: 230px;
+        min-width: 210px;
+        margin: 0 auto 15px;
     }
 }

@@ -6,7 +6,7 @@
     background: black;
     color: white;
     padding: 0;
-    margin: 18px 0 0 36px;
+    margin: 0 0 0 36px;
     transition: 0.8s linear;
     border: none;
     outline: none;
@@ -22,13 +22,14 @@
 
 @media (max-width: 522px) {
     .pop-up__save-button {
-        width: 270px;
-        margin: 10px 0 0 5px;
+        max-width: 310px;
+        margin: 50px 10px 0;
     }
 }
 
-@media (max-width: 338px) {
+@media (max-width: 398px) {
     .pop-up__save-button {
         width: 230px;
+        margin: 30px 10px;
     }
 }
