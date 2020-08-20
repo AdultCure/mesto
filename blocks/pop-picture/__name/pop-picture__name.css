@@ -1,0 +1,30 @@
+.pop-picture__name {
+    min-width: 350px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    outline: none;
+    display: block;
+    margin: 0 36px 30px;
+    padding-bottom: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    color: #000000;
+}
+
+@media (max-width: 522px) {
+    .pop-picture__name {
+        min-width: 260px;
+        margin: 0 auto 25px;
+    }
+}
+
+@media (max-width: 398px) {
+    .pop-picture__name {
+        min-width: 210px;
+        margin: 0 auto 15px;
+    }
+}

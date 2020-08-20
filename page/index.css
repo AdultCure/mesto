@@ -9,6 +9,13 @@
 @import url("../blocks/main/main.css");
 @import url("../blocks/pop-up/pop-up.css");
 @import url("../blocks/pop-up/_open/pop-up_open.css");
+@import url("../blocks/pop-picture/pop-picture.css");
+@import url("../blocks/pop-picture/_open/pop-picture_open.css");
+@import url("../blocks/elements/__heart/_active/elements__heart_active.css");
+@import url("../blocks/pop-image/pop-image.css");
+@import url("../blocks/pop-image/_open/pop-image_open.css");
+
+
 
 
 

@@ -1,0 +1,13 @@
+.elements__picture-button {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    grid-row: pic1 / pic2;
+    grid-column: pic1 / pic2;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}

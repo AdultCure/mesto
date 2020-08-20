@@ -1,0 +1,16 @@
+@import url("__close-button/pop-image__close-button.css");
+@import url("__container/pop-image__container.css");
+@import url("__photo/pop-image__photo.css");
+@import url("__title/pop-image__title.css");
+
+.pop-image {
+    min-width: 100%;
+    position: fixed;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: visibility 0.5s linear, opacity 0.5s linear;
+    visibility: hidden;
+}

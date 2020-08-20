@@ -1,0 +1,24 @@
+.pop-image__close-button {
+    min-width: 51px;
+    min-height: 51px;
+    justify-self: end;
+    border: none;
+    padding: 0;
+    outline: none;
+    grid-column: 2;
+    grid-row: 1;
+    background: url("../../../images/Close Icon.svg") bottom right;
+    cursor: pointer;
+}
+
+.pop-image__close-button:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 552px) {
+    .pop-image__close-button {
+        min-width: 40px;
+        min-height: 40px;
+        background-size: cover;
+    }
+}

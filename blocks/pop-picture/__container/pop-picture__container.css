@@ -1,0 +1,25 @@
+.pop-picture__container {
+    display: grid;
+    grid-template-columns: 430px auto;
+    grid-template-rows: min-content minmax(auto, 330px);
+    padding-left: 45px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+@media (max-width: 522px) {
+    .pop-picture__container {
+        grid-template-columns: 330px auto;
+        grid-template-rows: min-content minmax(auto, 330px);
+        padding-left: 40px;
+    }
+}
+
+
+@media (max-width: 398px) {
+    .pop-picture__container {
+        grid-template-columns: 250px auto;
+        grid-template-rows: min-content minmax(auto, 250px);
+    }
+}

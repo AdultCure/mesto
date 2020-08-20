@@ -1,0 +1,8 @@
+.elements__heart_active {
+    background: url("../../../../images/header__logo-active.svg") top left no-repeat;
+    transition: 0s;
+}
+
+.elements__heart_active:hover {
+    opacity: 1;
+}

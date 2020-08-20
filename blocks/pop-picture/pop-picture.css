@@ -1,0 +1,21 @@
+@import url("__close-button/pop-picture__close-button.css");
+@import url("__form/pop-picture__form.css");
+@import url("__save-button/pop-picture__save-button.css");
+@import url("__name/pop-picture__name.css");
+@import url("__url/pop-picture__url.css");
+@import url("__title/pop-picture__title.css");
+@import url("__container/pop-picture__container.css");
+
+
+
+.pop-picture {
+    min-width: 100%;
+    position: fixed;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: visibility 0.5s linear, opacity 0.5s linear;
+    visibility: hidden;
+}

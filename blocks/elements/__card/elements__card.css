@@ -3,10 +3,35 @@
     max-height: 361px;
     background-color: white;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content minmax(auto, 241px) auto;
+    grid-template-areas: "pic1"
+                         "pic2"
+                         "title";
+}
+
+@media (max-width: 792px) {
+    .elements__card {
+        grid-template-rows: min-content minmax(auto, 200px) auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .elements__card {
+        grid-template-rows: min-content minmax(auto, 170px) auto;
+    }
+}
+@media (max-width: 616px) {
+    .elements__card {
+        grid-template-rows: min-content minmax(auto, 140px) auto;
+    }
 }
 
 @media (max-width: 546px) {
     .elements__card {
+        grid-template-rows: min-content minmax(auto, 241px) auto;
+        grid-template-columns: minmax(auto, 282px);
         justify-self: center;
         align-self: center;
     }

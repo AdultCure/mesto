@@ -4,6 +4,7 @@
     grid-template-rows: minmax(min-content, 23px);
     justify-content: space-between;
     margin: 23px 18px 31px 24px;
+    grid-row: title;
 }
 
 @media (max-width: 882px) {

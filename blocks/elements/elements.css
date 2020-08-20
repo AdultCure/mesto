@@ -3,6 +3,9 @@
 @import url("__heart/elements__heart.css");
 @import url("__picture/elements__picture.css");
 @import url("__title/elements__title.css");
+@import url("__trash/elements__trash.css");
+@import url("__trash-button/elements__trash-button.css");
+@import url("__picture-button/elements__picture-button.css");
 
 .elements {
     margin: 50px auto 0;

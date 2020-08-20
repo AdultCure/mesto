@@ -25,53 +25,17 @@
 
 			<section class="elements">
 
-				<div class="elements__card">
-					<img src="./images/Karachai.jpg" alt="Карачаевск" class="elements__picture">
-					<div class="elements__content">
-						<h2 class="elements__title">Карачаевск</h2>
-						<button class="elements__heart" type="button"></button>
+				<template id="card">
+					<div class="elements__card">
+						<button class="elements__trash-button"><img src="./images/Trash.svg" alt="Мусорка" class="elements__trash"></button>
+						<button class="elements__picture-button"><img src="" alt="" class="elements__picture"></button>
+						<div class="elements__content">
+							<h2 class="elements__title"></h2>
+							<button class="elements__heart" type="button"></button>
+						</div>
 					</div>
-				</div>
+				</template>
 
-				<div class="elements__card">
-					<img src="./images/Elbrus.png" alt="Эльбрус" class="elements__picture">
-					<div class="elements__content">
-						<h2 class="elements__title">Гора Эльбрус</h2>
-						<button class="elements__heart" type="button"></button>
-					</div>
-				</div>
-
-				<div class="elements__card">
-					<img src="./images/Dombai.png" alt="Домбай" class="elements__picture">
-					<div class="elements__content">
-						<h2 class="elements__title">Домбай</h2>
-						<button class="elements__heart" type="button"></button>
-					</div>
-				</div>
-
-				<div class="elements__card">
-					<img src="./images/Elbrus.png" alt="Эльбрус" class="elements__picture">
-					<div class="elements__content">
-						<h2 class="elements__title">Гора Эльбрус</h2>
-						<button class="elements__heart" type="button"></button>
-					</div>
-				</div>
-
-				<div class="elements__card">
-					<img src="./images/Dombai.png" alt="Домбай" class="elements__picture">
-					<div class="elements__content">
-						<h2 class="elements__title">Домбай</h2>
-						<button class="elements__heart" type="button"></button>
-					</div>
-				</div>
-
-				<div class="elements__card">
-					<img src="./images/Karachai.jpg" alt="Карачаевск" class="elements__picture">
-					<div class="elements__content">
-						<h2 class="elements__title">Карачаево-Черкессия</h2>
-						<button class="elements__heart" type="button"></button>
-					</div>
-				</div>
 
 			</section>
 
@@ -80,18 +44,41 @@
 			<p class="footer__copyright">© 2020 Mesto Russia</p>
 		</footer>
 	</div>
-<div class="pop-up">
-	<div class="pop-up__container">
-		<button class="pop-up__close-button" type="button">
-		</button>
-		<form class="pop-up__form" method="post" name="profileForm">
-			<h3 class="pop-up__title">Редактировать профиль</h3>
-			<input class="pop-up__name" placeholder="Имя" name="profileName">
-			<input class="pop-up__job" placeholder="Профессия" name="profileJob">
-			<button class="pop-up__save-button" type="submit">Сохранить</button>
-		</form>
+	<div class="pop-up">
+		<div class="pop-up__container">
+			<button class="pop-up__close-button" type="button">
+			</button>
+			<form class="pop-up__form" method="post" name="profileForm">
+				<h3 class="pop-up__title">Редактировать профиль</h3>
+				<input class="pop-up__name" placeholder="Имя" name="profileName">
+				<input class="pop-up__job" placeholder="Профессия" name="profileJob">
+				<button class="pop-up__save-button" type="submit">Сохранить</button>
+			</form>
+		</div>
 	</div>
-</div>
+
+	<div class="pop-picture">
+		<div class="pop-picture__container">
+			<button class="pop-picture__close-button" type="button">
+			</button>
+			<form class="pop-picture__form" method="post" name="pictureForm">
+				<h3 class="pop-picture__title">Новое место</h3>
+				<input class="pop-picture__name" placeholder="Название" name="pictureName">
+				<input class="pop-picture__url" placeholder="Ссылка на картинку" name="pictureJob">
+				<button class="pop-picture__save-button" type="submit">Сохранить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="pop-image">
+		<div class="pop-image__container">
+			<button class="pop-image__close-button" type="button">
+			</button>
+				<img src="" alt="img" class="pop-image__photo">
+				<h3 class="pop-image__title"></h3>
+		</div>
+	</div>
+
 	<script src="./script/script.js"></script>
 </body>
 </html>
