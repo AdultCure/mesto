@@ -1,82 +1,73 @@
 /* Тут переменные для pop-up */
-let popup = document.querySelector('.pop-up');
-let popupOpenButton = document.querySelector('.profile__edit-button');
-let popupCloseButton = popup.querySelector('.pop-up__close-button');
-let formElement = document.querySelector('.pop-up__form');
-let profile = document.querySelector('.profile');
-let nameInput = formElement.querySelector('.pop-up__name');
-let jobInput = formElement.querySelector('.pop-up__job');
-let nameProfile = profile.querySelector('.profile__name');
-let jobProfile = profile.querySelector('.profile__about');
+const popup = document.querySelector('.pop-up');
+const popupOpenButton = document.querySelector('.profile__edit-button');
+const popupCloseButton = popup.querySelector('.pop-up__close-button');
+const formElement = document.querySelector('.pop-up__form');
+const profile = document.querySelector('.profile');
+const nameInput = formElement.querySelector('.pop-up__name');
+const jobInput = formElement.querySelector('.pop-up__job');
+const nameProfile = profile.querySelector('.profile__name');
+const jobProfile = profile.querySelector('.profile__about');
 
 /* Тут переменные для pop-picture */
-let popPicture = document.querySelector('.pop-picture');
-let popPictureOpenButton = document.querySelector('.profile__add-box');
-let popPictureCloseButton = document.querySelector('.pop-picture__close-button');
-let popPictureSaveButton = document.querySelector('.pop-picture__save-button');
-let popPictureFormElement = document.querySelector('.pop-picture__form');
-let popPictureTitle = popPictureFormElement.querySelector('.pop-picture__name');
-let popPictureUrl = popPictureFormElement.querySelector('.pop-picture__url');
+const popPictureOpenButton = document.querySelector('.profile__add-box');
+const popPictureCloseButton = document.querySelector('.pop-picture__close-button');
+const popPictureFormElement = document.querySelector('.pop-picture__form');
 const elementsContainer = document.querySelector('.elements');
 
 
-
-/* Тут переменные для elements */
-let elementCard = document.querySelectorAll('.elements__card');
-let deleteButtons = document.querySelectorAll('.elements__trash-button');
-let elementsPicture = document.querySelector('.elements__picture');
-let pictureButtons = document.querySelectorAll('.elements__picture-button');
-
 /* pop image */
-let popImageBlock = document.querySelector('.pop-image');
-let popImage = document.querySelector('.pop-image__photo');
-let popImageCloseButton = document.querySelector('.pop-image__close-button');
-let popImagePhoto = document.querySelector('.pop-image__photo');
-let popImageContainer = document.querySelector('.pop-image__container');
+const popImageCloseButton = document.querySelector('.pop-image__close-button');
 
 
-/* Тут переменные для heart */
-let hearts = document.querySelectorAll('.elements__heart');
-
-
-/* popup */
-function popupOpen() {
-    nameInput.value = nameProfile.textContent;
-    jobInput.value = jobProfile.textContent;
-
-    popup.classList.add('pop-up_open');
+/* Открытие и закрытие всех pop-up блоков*/
+function popupOpen(name) {
+    name.classList.add('pop-up_open');
 }
 
-function popupClose() {
-    popup.classList.remove('pop-up_open');
+function popupClose(name) {
+    name.classList.remove('pop-up_open');
 }
 
-popupOpenButton.addEventListener('click', popupOpen);
-popupCloseButton.addEventListener('click', popupClose);
+popupOpenButton.addEventListener('click', function() {
+    nameProfOpen = document.querySelector('.pop-up')
+
+    popupOpen(nameProfOpen)
+});
+popupCloseButton.addEventListener('click', function() {
+    nameProfClose = document.querySelector('.pop-up')
+
+    popupClose(nameProfClose)
+});
+
+popPictureOpenButton.addEventListener('click', function() {
+    namePictureOpen = document.querySelector('.pop-picture')
+
+    popupOpen(namePictureOpen)
+});
+
+popPictureCloseButton.addEventListener('click', function() {
+    namePictureClose = document.querySelector('.pop-picture')
+
+    popupClose(namePictureOpen)
+});
+
+
+
 
 function formSubmitHandler (evt) {
         evt.preventDefault();
-
         nameProfile.textContent = nameInput.value;
         jobProfile.textContent = jobInput.value;
-        popupClose();
+
+        nameInput.value = nameProfile.textContent;
+        jobInput.value = jobProfile.textContent;
+
+        nameClose = document.querySelector('.pop-up')
+        popupClose(nameClose);
 }
 
 formElement.addEventListener('submit', formSubmitHandler);
-
-
-/* popPicture */
-function popPictureOpen() {
-    popPicture.classList.add('pop-picture_open');
-}
-
-function popPictureClose() {
-    popPicture.classList.remove('pop-picture_open');
-}
-
-
-popPictureOpenButton.addEventListener('click', popPictureOpen);
-popPictureCloseButton.addEventListener('click', popPictureClose);
 
 
 
@@ -112,42 +103,45 @@ popPictureCloseButton.addEventListener('click', popPictureClose);
 const addToCard = (cardTitle, cardUrl) => {
     const cardTemplate = document.querySelector('#card').content.cloneNode(true)
 
-    cardTemplate.querySelector(".elements__title").textContent = cardTitle
-    cardTemplate.querySelector(".elements__picture").src = cardUrl
-    cardTemplate.querySelector(".elements__picture").alt = cardUrl
+    const elementCardTitle = cardTemplate.querySelector(".elements__title")
+    const elementCardSrc = cardTemplate.querySelector(".elements__picture")
+    const popImgTitle = document.querySelector('.pop-image__title')
+    const popImgSrc = document.querySelector('.pop-image__photo')
+
+    elementCardTitle.textContent = cardTitle
+    elementCardSrc.src = cardUrl
+    elementCardSrc.alt = cardUrl
 
 
     cardTemplate.querySelector('.elements__trash-button').addEventListener('click', event => {
-        const DelElements = event.target.closest(".elements__card")
-
-        DelElements.remove()
+        event.target.closest(".elements__card").remove()
     })
 
 
     cardTemplate.querySelector('.elements__heart').addEventListener('click', event => {
-        const LikeElements = event.target.classList.toggle("elements__heart_active");
+        event.target.classList.toggle("elements__heart_active");
     })
 
-    cardTemplate.querySelector('.elements__picture-button').addEventListener('click', function (){
-        popImageBlock.classList.add('pop-image_open')
+    cardTemplate.querySelector('.elements__picture-button').addEventListener('click', function(){
+        nameImgOpen = document.querySelector('.pop-image')
 
 
-        const popImgTitle = document.querySelector('.pop-image__title').textContent = cardTitle
-        const popImgSrc = document.querySelector('.pop-image__photo').src = cardUrl
+        popImgTitle.textContent = cardTitle
+        popImgSrc.src = cardUrl
+        popupOpen(nameImgOpen)
     })
 
 
     popImageCloseButton.addEventListener('click', function () {
-        popImageBlock.classList.remove('pop-image_open')
+        nameImgClose = document.querySelector('.pop-image')
+
+        popupClose(nameImgClose)
     })
 
     elementsContainer.prepend(cardTemplate)
 
 }
 
-elementCard.forEach(function (item) {
-item.addEventListener('click')
-})
 
 initialCards.forEach(item => {
     addToCard(item.name, item.link);
@@ -156,40 +150,18 @@ initialCards.forEach(item => {
 
 popPictureFormElement.addEventListener('submit', event => {
     event.preventDefault()
+    popPictureClose = document.querySelector('.pop-picture')
 
     const cardTitle = popPictureFormElement.querySelector(".pop-picture__name").value
     const cardUrl = popPictureFormElement.querySelector(".pop-picture__url").value
 
     addToCard(cardTitle, cardUrl)
-    popPictureClose()
+    popupClose(popPictureClose)
 })
 
 
 
 /*----------------------------------------------------------------------------------------------------------------------*/
-
-/*pictureButtons.addEventListener('click', popImageOpen)*/
-
-/* открытие карточек */
-/*function popImageOpen(src) {
-    popImage.src = src;
-    popImageBlock.classList.add('pop-image_open');
-}*/
-
-/*function popImageClose() {
-    popImageBlock.classList.remove('pop-image_open');
-}
-
-popImageCloseButton.addEventListener('click', popImageClose);
-
-pictureButtons.forEach(function (item) {
-    item.addEventListener('click', function (evt) {
-        let photoImage = evt.target.src;
-        popImageOpen(photoImage);
-    })
-})*/
-
-
 
 
 
