@@ -23,6 +23,13 @@
     }
 }
 
+@media (max-width: 624px) {
+    .elements {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 @media (max-width: 546px) {
     .elements {
         grid-template-rows: repeat(6, minmax(min-content, auto));

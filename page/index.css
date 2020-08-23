@@ -7,10 +7,11 @@
 @import url("../blocks/pages/pages.css");
 @import url("../blocks/profile/profile.css");
 @import url("../blocks/main/main.css");
+@import url("../blocks/popup-wrapper/popup-wrapper.css");
 @import url("../blocks/pop-up/pop-up.css");
 @import url("../blocks/pop-picture/pop-picture.css");
 @import url("../blocks/pop-image/pop-image.css");
-@import url("../blocks/pop-up/_open/pop-up_open.css");
+@import url("../blocks/popup-wrapper/_open/popup-wrapper_open.css");
 @import url("../blocks/elements/__heart/_active/elements__heart_active.css");
 
 

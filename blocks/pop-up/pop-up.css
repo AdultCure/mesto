@@ -5,17 +5,3 @@
 @import url("__job/pop-up__job.css");
 @import url("__title/pop-up__title.css");
 @import url("__container/pop-up__container.css");
-
-
-
-.pop-up {
-    min-width: 100%;
-    position: fixed;
-    z-index: 5;
-    background: rgba(0, 0, 0, 0.5);
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: visibility 0.5s linear, opacity 0.5s linear;
-    visibility: hidden;
-}

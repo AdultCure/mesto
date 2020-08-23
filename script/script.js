@@ -1,4 +1,4 @@
-/* Тут переменные для pop-up */
+/* Тут pop-up */
 const popup = document.querySelector('.pop-up');
 const popupOpenButton = document.querySelector('.profile__edit-button');
 const popupCloseButton = popup.querySelector('.pop-up__close-button');
@@ -9,7 +9,7 @@ const jobInput = formElement.querySelector('.pop-up__job');
 const nameProfile = profile.querySelector('.profile__name');
 const jobProfile = profile.querySelector('.profile__about');
 
-/* Тут переменные для pop-picture */
+/* Тут pop-picture */
 const popPictureOpenButton = document.querySelector('.profile__add-box');
 const popPictureCloseButton = document.querySelector('.pop-picture__close-button');
 const popPictureFormElement = document.querySelector('.pop-picture__form');
@@ -22,11 +22,11 @@ const popImageCloseButton = document.querySelector('.pop-image__close-button');
 
 /* Открытие и закрытие всех pop-up блоков*/
 function popupOpen(name) {
-    name.classList.add('pop-up_open');
+    name.classList.add('popup-wrapper_open');
 }
 
 function popupClose(name) {
-    name.classList.remove('pop-up_open');
+    name.classList.remove('popup-wrapper_open');
 }
 
 popupOpenButton.addEventListener('click', function() {
@@ -138,10 +138,13 @@ const addToCard = (cardTitle, cardUrl) => {
         popupClose(nameImgClose)
     })
 
-    elementsContainer.prepend(cardTemplate)
+    renderCard(cardTemplate)
 
 }
 
+function renderCard(object) {
+    elementsContainer.prepend(object)
+}
 
 initialCards.forEach(item => {
     addToCard(item.name, item.link);
