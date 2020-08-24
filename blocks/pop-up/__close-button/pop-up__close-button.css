@@ -7,7 +7,7 @@
     outline: none;
     grid-column: 2;
     grid-row: 1;
-    background: url("../../../images/Close Icon.svg") bottom right;
+    background: url("../../../images/Close Icon.svg") bottom right no-repeat;
     cursor: pointer;
 }
 
