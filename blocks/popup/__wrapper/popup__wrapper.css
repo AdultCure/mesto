@@ -1,6 +1,4 @@
-@import url("_open/popup-wrapper_open.css");
-
-.popup-wrapper {
+.popup__wrapper {
     min-width: 100%;
     position: fixed;
     z-index: 5;

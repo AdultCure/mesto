@@ -1,3 +1,14 @@
+.pop-image__title {
+    grid-column: 1;
+    grid-row: 3;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
 .pop-up__title {
     font-weight: 900;
     font-size: 24px;

@@ -22,15 +22,17 @@ const popImageCloseButton = document.querySelector('.pop-image__close-button');
 
 /* Открытие и закрытие всех pop-up блоков*/
 function popupOpen(name) {
-    name.classList.add('popup-wrapper_open');
+    name.classList.add('popup__wrapper_open');
 }
 
 function popupClose(name) {
-    name.classList.remove('popup-wrapper_open');
+    name.classList.remove('popup__wrapper_open');
 }
 
 popupOpenButton.addEventListener('click', function() {
     nameProfOpen = document.querySelector('.pop-up')
+    nameInput.value = nameProfile.textContent;
+    jobInput.value = jobProfile.textContent;
 
     popupOpen(nameProfOpen)
 });
@@ -54,14 +56,10 @@ popPictureCloseButton.addEventListener('click', function() {
 
 
 
-
 function formSubmitHandler (evt) {
         evt.preventDefault();
         nameProfile.textContent = nameInput.value;
         jobProfile.textContent = jobInput.value;
-
-        nameInput.value = nameProfile.textContent;
-        jobInput.value = jobProfile.textContent;
 
         nameClose = document.querySelector('.pop-up')
         popupClose(nameClose);
@@ -138,17 +136,12 @@ const addToCard = (cardTitle, cardUrl) => {
         popupClose(nameImgClose)
     })
 
-    renderCard(cardTemplate)
-
+    return cardTemplate;
 }
 
-function renderCard(object) {
-    elementsContainer.prepend(object)
+renderCard = (title, src) => {
+    elementsContainer.prepend(addToCard(title, src))
 }
-
-initialCards.forEach(item => {
-    addToCard(item.name, item.link);
-});
 
 
 popPictureFormElement.addEventListener('submit', event => {
@@ -158,9 +151,13 @@ popPictureFormElement.addEventListener('submit', event => {
     const cardTitle = popPictureFormElement.querySelector(".pop-picture__name").value
     const cardUrl = popPictureFormElement.querySelector(".pop-picture__url").value
 
-    addToCard(cardTitle, cardUrl)
     popupClose(popPictureClose)
+    renderCard(cardTitle, cardUrl)
 })
+
+initialCards.forEach(item => {
+    renderCard(item.name, item.link)
+});
 
 
 

@@ -25,18 +25,6 @@
 
 			<section class="elements">
 
-				<template id="card">
-					<div class="elements__card">
-						<button class="elements__trash-button"><img src="./images/Trash.svg" alt="Мусорка" class="elements__trash"></button>
-						<button class="elements__picture-button"><img src="" alt="" class="elements__picture"></button>
-						<div class="elements__content">
-							<h2 class="elements__title"></h2>
-							<button class="elements__heart" type="button"></button>
-						</div>
-					</div>
-				</template>
-
-
 			</section>
 
 		</main>
@@ -44,7 +32,7 @@
 			<p class="footer__copyright">© 2020 Mesto Russia</p>
 		</footer>
 	</div>
-	<div class="pop-up popup-wrapper">
+	<div class="pop-up popup__wrapper">
 		<div class="pop-up__container">
 			<button class="pop-up__close-button" type="button">
 			</button>
@@ -57,7 +45,7 @@
 		</div>
 	</div>
 
-	<div class="pop-picture popup-wrapper">
+	<div class="pop-picture popup__wrapper">
 		<div class="pop-up__container">
 			<button class="pop-up__close-button pop-picture__close-button" type="button">
 			</button>
@@ -70,7 +58,7 @@
 		</div>
 	</div>
 
-	<div class="pop-image popup-wrapper">
+	<div class="pop-image popup__wrapper">
 		<div class="pop-image__container">
 			<button class="pop-up__close-button pop-image__close-button" type="button">
 			</button>
@@ -78,6 +66,17 @@
 				<h3 class="pop-image__title"></h3>
 		</div>
 	</div>
+
+	<template id="card">
+		<div class="elements__card">
+			<button class="elements__trash-button"><img src="./images/Trash.svg" alt="Мусорка" class="elements__trash"></button>
+			<button class="elements__picture-button"><img src="" alt="" class="elements__picture"></button>
+			<div class="elements__content">
+				<h2 class="elements__title"></h2>
+				<button class="elements__heart" type="button"></button>
+			</div>
+		</div>
+	</template>
 
 	<script src="./script/script.js"></script>
 </body>
