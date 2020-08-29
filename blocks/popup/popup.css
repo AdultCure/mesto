@@ -8,6 +8,7 @@
 @import url("__title/pop-image__title.css");
 @import url("__type-error/pop-up__type-error.css");
 @import url("__input-error/form__input-error.css");
+@import url("__input-picture-error/form__input-picture-error.css");
 @import url("__input-error/_active/form__input-error_active.css");
 @import url("__form-field/pop-up__form-field.css");
 @import url("__save-button/_inactive/pop-up__save-button_inactive.css");
