@@ -36,11 +36,17 @@
 		<div class="pop-up__container">
 			<button class="pop-up__close-button" type="button">
 			</button>
-			<form class="pop-up__form" method="post" name="profileForm">
+			<form class="pop-up__form" method="post" name="profileForm" novalidate>
 				<h3 class="pop-up__title">Редактировать профиль</h3>
-				<input class="pop-up__name" placeholder="Имя" name="profileName">
-				<input class="pop-up__job" placeholder="Профессия" name="profileJob">
-				<button class="pop-up__save-button" type="submit">Сохранить</button>
+				<label class="pop-up__form-field">
+					<input class="pop-up__name form__input" id="nameInput" placeholder="Имя" name="profileName" type="text" required minlength="2" maxlength="40">
+					<span class="form__input-error" id="nameInput-error"></span>
+				</label>
+				<label class="pop-up__form-field">
+					<input class="pop-up__job form__input" id="jobInput" placeholder="Профессия" name="profileJob" type="text" required minlength="2" maxlength="200">
+					<span class="form__input-error" id="jobInput-error"></span>
+				</label>
+					<button class="pop-up__save-button" type="submit">Сохранить</button>
 			</form>
 		</div>
 	</div>
@@ -49,10 +55,16 @@
 		<div class="pop-up__container">
 			<button class="pop-up__close-button pop-picture__close-button" type="button">
 			</button>
-			<form class="pop-up__form pop-picture__form" method="post" name="profileForm">
+			<form class="pop-up__form pop-picture__form" method="post" name="profileForm" novalidate>
 				<h3 class="pop-up__title">Новое место</h3>
-				<input class="pop-up__name pop-picture__name" placeholder="Место" name="pictureName">
-				<input class="pop-up__job pop-picture__url" placeholder="Ссылка на картинку" name="pictureUrl">
+				<label class="pop-up__form-field">
+					<input class="pop-up__name pop-picture__name form__input-picture" id="nameInputPicture" placeholder="Место" name="pictureName" type="text" minlength="1" maxlength="30" required>
+					<span class="form__input-picture-error" id="nameInputPicture-error"></span>
+				</label>
+				<label class="pop-up__form-field">
+					<input class="pop-up__job pop-picture__url form__input-picture" id="urlInputPicture" placeholder="Ссылка на картинку" name="pictureUrl" type="url" required>
+					<span class="form__input-picture-error" id="urlInputPicture-error"></span>
+				</label>
 				<button class="pop-up__save-button pop-picture__save-button" type="submit">Сохранить</button>
 			</form>
 		</div>

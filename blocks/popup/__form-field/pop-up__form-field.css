@@ -1,0 +1,4 @@
+.pop-up__form-field {
+    display: grid;
+    grid-template-rows: auto 35px;
+}
